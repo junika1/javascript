@@ -73,7 +73,7 @@ Changes not staged for commit:
 
 
 TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
-$ git commit -m 'update'
+$ git commit -m 'update'   //또는 git commit -m 'file'
 [master (root-commit) b727426] update
  1 file changed, 10 insertions(+)
  create mode 100644 abc.txt
