@@ -1,0 +1,93 @@
+git 가입
+git-scm에서 프로그램 다운로드 및 설치
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa
+$ git init
+Initialized empty Git repository in D:/test/aaa/.git/
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ ls -la
+total 5
+drwxr-xr-x 1 TJ 197121   0  8월 27 20:12 ./
+drwxr-xr-x 1 TJ 197121   0  8월 27 20:02 ../
+drwxr-xr-x 1 TJ 197121   0  8월 27 20:12 .git/
+-rw-r--r-- 1 TJ 197121 127  8월 27 20:08 abc.txt
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git config --global user.email 'junika1@protonmail.com'
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git config --global user.name 'junika1'
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git remote add origin https://github.com/junika1/aaa.git
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git remote
+origin
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git add .
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ cat abc.txt
+javascript & jQuery
+개발파일관리
+버전관리
+협업
+백업
+git hub
+최고
+
+추가내용
+가나다라마바사
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ vim abc.txt
+]
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abc.txt
+
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git commit -m 'update'
+[master (root-commit) b727426] update
+ 1 file changed, 10 insertions(+)
+ create mode 100644 abc.txt
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/junika1/aaa.git
+ * [new branch]      master -> master
+
+TJ@DESKTOP-6JUTDNJ MINGW64 /d/test/aaa (master)
+$
